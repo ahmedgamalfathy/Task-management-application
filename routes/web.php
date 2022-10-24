@@ -28,3 +28,4 @@ Route::patch('/projects/{project}/tasks/{task}',[TaskController::class, 'update'
 Route::delete('/projects/{project}/tasks/{task}',[TaskController::class, 'destroy']);
 Route::get('/profile',[ProfileController::class,'index'])->middleware('auth');
 Route::patch('/profile',[ProfileController::class,'update']);
+// بسم الله الرحمن الرحيم 
