@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\project;
 class HomeController extends Controller
 {
     /**
@@ -21,8 +21,9 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(project $project)
     {
-        return view('home');
+       // return view('home');
+       return redirect('/projects/'. $project->id);
     }
 }
